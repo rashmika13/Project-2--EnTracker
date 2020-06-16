@@ -1,0 +1,81 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: "Source Code Pro", monospace;
+}
+
+a {
+  color: white;
+}
+i {
+  color: white;
+  font-size: 20px;
+}
+.netflix {
+  color: #de0b14;
+}
+.netflix:hover {
+  color: yellow;
+}
+.amazon {
+  color: #11a3dc;
+}
+.amazon:hover {
+  color: yellow;
+}
+
+.hulu {
+  color: #1de180;
+}
+.hulu:hover {
+  color: yellow;
+}
+
+.disney {
+  color: #18cbd0;
+}
+.disney:hover {
+  color: yellow;
+}
+
+.navbar-fixed {
+  background-color: #de0b14;
+  font-size: 25px;
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.form {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.brand-logo {
+  text-align: center;
+}
+
+.network {
+  margin-top: 10%;
+  margin-left: 25%;
+}
+.label {
+  color: white;
+}
+
+.add-page {
+  color: white;
+  display: inline;
+}
+
+.log {
+  text-align: right;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+}

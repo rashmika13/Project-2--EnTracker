@@ -1,0 +1,83 @@
+<% include ../partials/header.ejs%>  
+  <body>
+    <div class="form">
+      <label class="add-page">Add Your Favorite TV Show</label>
+      <% if (user._id.equals(user && user._id)) { %>
+      <div class="card-action">
+        <form action="/shows/addShow" method="POST">
+          <label class="label">Title:</label>
+          <input type="text" name="title" />
+          <label class="label"> Year:</label>
+          <input type="text" name="year" />
+          <label class="label">Streaming On-Network:</label>
+          <select name="network" id="network">
+            <option value="Netflix">Netflix</option>
+            <option value="Amazon Prime">Amazon Prime</option>
+            <option value="Hulu">Hulu</option>
+            <option value="DisneyPlus">Disney Plus</option>
+          </select>
+          <input type="submit" value="Add Show" />
+        </form>
+      </div>
+      <% } %>
+    </div>
+<div class="form">
+  <h2><a class="netflix" target="_blank" href="https://www.netflix.com/ca/">NETFLIX</a></h2>
+  <% user.shows.forEach (function(s){ %> <% if (s.network === 'Netflix') {%>
+  <td><%= s.title %></td>
+  <td><%= s.year %></td>
+  <td></td><a href="/shows/<%= s._id %>">DETAILS</a></td>
+      <form action="/shows/<%= s._id %>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete Show" />
+      </form>
+  <% } %> <% })%>
+</div>
+    
+<div class="form">
+  <h2>
+    <a class="amazon" target="_blank" href="https://www.primevideo.com/">AMAZON PRIME</a>
+  </h2>
+  <% user.shows.forEach (function(s){ %> <% if (s.network === 'Amazon Prime')
+  {%>
+  <td><%= s.title %></td>
+  <td><%= s.year %></td>
+  <td><a href="/shows/<%= s._id %>">DETAILS</a></td>
+  <form action="/shows/<%= s._id %>?_method=DELETE" method="POST">
+    <input type="submit" value="Delete Show" />
+  </form>
+  <% } %> <% })%>
+
+</div class="form">
+    
+<div class="form">
+  <h2><a class="hulu" target="_blank" href="https://www.hulu.com/welcome">HULU</a></h2>
+    <% user.shows.forEach (function(s){ %> <% if (s.network === 'Hulu') {%>
+    <td><%= s.title %></td>
+    <td><%= s.year %></td>
+    <td><a href="/shows/<%= s._id %>">DETAILS</a></td>
+    <form action="/shows/<%= s._id %>?_method=DELETE" method="POST">
+      <input type="submit" value="Delete Show" />
+    </form>
+    
+    <% } %> <% })%>
+  
+  </div>
+   
+<div class="form">
+  <h2><a class="disney" target="_blank" href="https://www.disneyplus.com/">DISNEY PLUS</a>
+    </h2>
+    <% user.shows.forEach (function(s){ %> <% if (s.network === 'DisneyPlus')
+    {%>
+    <td><%= s.title %></td>
+    <td><%= s.year %></td>
+    <td><a href="/shows/<%= s._id %>">DETAILS</a></td>
+    <form action="/shows/<%= s._id %>?_method=DELETE" method="POST">
+      <input type="submit" value="Delete Show" />
+    </form>
+    <% } %> <% })%>
+  
+  </div>
+  <br>
+  <% include ../partials/footer.ejs%>     
+  </body>
+</html>

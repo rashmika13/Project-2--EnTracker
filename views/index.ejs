@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <!-- Google Icon Fonts used by Materialize -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Materialize CSS Framework -->
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <!-- JavaScript for Materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a class="brand-logo left">EN-TRACKER</a>
+          <br />
+          <i>Start tracking your entertainment</i>
+          <div class="log">
+            <% if (user) { %>
+            <a href="/logout"
+              ><i class="material-icons">trending_flat</i>Log Out<img
+                src="/images/google-logo-png-open-2000.png"
+                alt="google"
+                width="45"
+                height="45"
+            /></a>
+            <% } else { %>
+            <a class="log" href="/auth/google"
+              ><i class="material-icons">vpn_key</i>Login with Google<img
+                src="/images/google-logo-png-open-2000.png"
+                alt="google"
+                width="45"
+                height="45"
+            /></a>
+
+            <% } %>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <img
+      class="network"
+      src="/images/amazon_netflix_hulu-100827339-large.jpg"
+      alt="google"
+      width="600"
+      height="400"
+    />
+  </body>
+</html>
