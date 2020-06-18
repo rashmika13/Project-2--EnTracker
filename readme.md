@@ -49,6 +49,7 @@
 # [En-Tracker](https://entracker.herokuapp.com/)
 
 ## `Planned future enhancements:`
- ## - Refactoring code to make the shows and comments to all users 
- ## - Adding features such as when the users choose a genre of the show the page would render all shows of the chosen genre
- ## - Functionality the does not allow duplicates in the show list
+ ## - Refactoring code to make the shows and comments available to different users at the same time.
+ ## - Accessing not only TV shows but also movies from third party API.
+ ## - Introducing additional feature such as when the users choose a genre of the show the page would render all shows of the      chosen genre.
+ ## - Functionality the does not allow duplicates in the show list.
