@@ -1,22 +1,10 @@
 const User = require("../models/user");
 
 module.exports = {
-  // addShow,
   create,
   show,
   delete: deleteShow,
 };
-
-// function addShow(req, res) {
-//   if (req.method === "POST") {
-//     req.user.shows.push(req.body);
-//     req.user.save(function (err) {
-//       res.render("shows/addShow", { user: req.user });
-//     });
-//   } else {
-//     res.render("shows/addShow", { user: req.user });
-//   }
-// }
 
 function show(req, res) {
   res.render("shows/addShow", { user: req.user });
