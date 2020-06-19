@@ -13,7 +13,7 @@
 
 ## Wireframe
 
-![Wireframe Image](public/images/Wireframe.png)
+![Wireframe Image](/public/images/wireframe.png)
 
 ## Entity Relationship Diagram (ERD)
 
